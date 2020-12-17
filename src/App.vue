@@ -50,7 +50,7 @@
                                sm="4">
                             <h3>NSS College of Engineering</h3>
                             <h5> B.Tech, Computer Science and Engineering</h5>
-                            <p> 6.74 CGPA - August 2016 - July 2020</p>
+                            <p> 6.14 CGPA - August 2016 - July 2020</p>
                         </v-col>
                         <v-col cols="12"
                                sm="4">
