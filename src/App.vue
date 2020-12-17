@@ -1,4 +1,4 @@
-<template>
+﻿<template>
     <v-app id="inspire">
         <v-app-bar app
                    color="white"
@@ -91,8 +91,9 @@
                         <v-col cols="12"
                                sm="6">
                             <h2>Tech Stack</h2>
-                            <v-breadcrumbs :items="skills" divider="|">
-                            </v-breadcrumbs>
+                            <p>
+                                Python, C, PHP, MySQL, VueJS, HTML, CSS, JS, Linux, UiPath, Adobe Audition, Adobe Premiere Pro
+                            </p>
                         </v-col>
 
                     </v-row>
@@ -143,7 +144,9 @@
                             </v-card-title>
 
                             <v-card-text class="py-2 white--text text-center">
-                                {{ new Date().getFullYear() }} - <strong>Vuetify</strong>
+                                <v-row>
+                                    {{ new Date().getFullYear() }} <v-spacer></v-spacer> <strong>⌐■_■</strong>
+                                </v-row>
                             </v-card-text>
                         </v-card>
                     </v-footer>
@@ -157,25 +160,11 @@
     export default {
         data: () => ({
             links: [
-                { name: 'Aswin Dinesh', href: '#About', id: 1 },
-                { name: 'Education', href: '#Education', id: 2 },
-                { name: 'Projects and Tech Stacks', href: '#Projects', id: 3 },
-                { name: 'Activities and Courses', href: '#Activites', id: 4 },
+                { name: 'Aswin Dinesh', href: 'About', id: 1 },
+                { name: 'Education', href: 'Education', id: 2 },
+                { name: 'Projects and Tech Stacks', href: 'Projects', id: 3 },
+                { name: 'Activities and Courses', href: 'Activites', id: 4 },
                 { name: 'Contact', href: '#Contact', id: 5 },
-            ],
-            skills: [
-                { text: 'Python', id: 1 },
-                { text: 'C', id: 2 },
-                { text: 'PHP', id: 3 },
-                { text: 'MySQL', id: 4 },
-                { text: 'VueJS', id: 5 },
-                { text: 'HTML', id: 6 },
-                { text: 'Linux', id: 7 },
-                { text: 'UiPath', id: 8 },
-                { text: 'CSS', id: 9 },
-                { text: 'JS', id: 10 },
-                { text: 'Adobe Audition', id: 11 },
-                { text: 'Adobe Premiere Pro', id: 12 },
             ],
             project: [
                 { text: 'A Movie Recommendation System', href: 'https://github.com/aswindinesh/movieRecommend', id: 1 },
